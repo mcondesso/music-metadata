@@ -1,0 +1,4 @@
+black==22.8.0
+mutagen==1.45.1
+python-dotenv==0.21.0
+tqdm==4.64.1
