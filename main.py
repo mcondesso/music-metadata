@@ -16,6 +16,7 @@ def get_mp3_files(directory: str) -> Tuple[str, str]:
 
 def parse_filename(filename: str) -> dict:
     without_extension = os.path.splitext(filename)[0]
+    without_extension = without_extension.replace("–", "-")
     try:
         artists, title = without_extension.split(" - ", maxsplit=1)
     except ValueError as error:
